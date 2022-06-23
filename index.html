@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>-=Тестовое задание=-</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="position-absolute top-50 start-50 translate-middle">
+            <button type="button" class="btn btn-primary" id="regBtn">
+                    Регистрация
+                </button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+            <form id="register">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Регистрация пользователя</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="alert alert-danger" role="alert" id="errorAlert"></div>
+                            <div class="mb-3">
+                                <label for="formFName" class="form-label">Имя</label>
+                                <input type="text" class="form-control" name="fname" id="formFName">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formLName" class="form-label">Фамилия</label>
+                                <input type="text" class="form-control" name="lname" id="formLName">
+                            </div>
+                            <div class="mb-3">
+                                <label for="formEmail" class="form-label">Email address</label>
+                                <input type="text" class="form-control" name="email" id="formEmail" placeholder="example@test.com">
+                                <div class="invalid-feedback" id="formEmailError"></div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formPassw" class="form-label">Пароль</label>
+                                <input type="password" class="form-control" name="password" id="formPassw">
+                                <div class="invalid-feedback" id="formPasswError"></div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formRetypePassw" class="form-label">Повтор пароля</label>
+                                <input type="password" class="form-control" name="retypePassword" id="formRetypePassw">
+                                <div class="invalid-feedback" id="formRetypePasswError"></div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                            <button type="submit" class="btn btn-primary">Зарегистрировать</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Toasts -->
+        <div class="position-fixed bottom-0 end-0 p-3">
+            <div class="toast align-items-center text-white bg-success" role="alert" aria-live="assertive" aria-atomic="true" id="successToast">
+                <div class="toast-body"></div>
+            </div>
+        </div>
+        <div class="position-fixed bottom-0 end-0 p-3">
+            <div class="toast align-items-center text-white bg-danger" role="alert" aria-live="assertive" aria-atomic="true" id="errorToast">
+                <div class="toast-body"></div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="/js/main.js"></script>
+        
+        <script>
+            
+        </script>
+    </body>
+</html>
