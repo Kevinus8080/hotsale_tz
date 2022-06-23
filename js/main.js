@@ -85,6 +85,7 @@ function modalError(id, message) {
 $('#regBtn').on('click', () => {
     $('#errorAlert').hide();
     $(Form.find('input')).each((key, el) => {
+        $(el).removeClass('is-invalid');
         $(el).val('');
     });
     $('#registerModal').modal('show');
