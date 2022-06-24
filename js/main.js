@@ -44,7 +44,6 @@ Form.on('submit', (e) => {
             $('#errorAlert').hide(HIDETIME);
         }
     }).done( (data) => {
-        console.log(data);
         if (data.error !== undefined) {
             switch (data.error) {
                 case '':
